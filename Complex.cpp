@@ -30,9 +30,14 @@ Complex &Complex::operator++() {
 
 Complex &Complex::operator--(int) {
 	cout << "After overloaded -- is called." << endl;
+	Complex temp(Re);
+	Complex temp1(Im);
 	Re--;
 	Im--;
-	return *this;
+
+	return temp;
+	return temp1;
+}
 }
 
 bool Complex::operator==(Complex const &rhs) {
